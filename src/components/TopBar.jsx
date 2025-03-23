@@ -5,17 +5,17 @@ export default function TopBar(){
     const navigate = useNavigate();
 
     function showPage(value){
-       
+        navigate(`/${value}`);
     }
     return(
         <header className="top-bar">
         <div className="logo">Slack</div>
         <nav>
             <ul>
-                <li><a onClick={()=>{showPage("products")}}>Product</a></li>
-                <li><a onClick={()=>{showPage("enterprise")}}>Enterprise</a></li>
-                <li><a onClick={()=>{showPage("resource")}}>Resources</a></li>
-                <li><a onClick={()=>{showPage("pricing")}}>Pricing</a></li>
+                <li><button onClick={()=>{showPage("products")}} className="btnbg">Product</button></li>
+                <li><button onClick={()=>{showPage("enterprise")}} className="btnbg">Enterprise</button></li>
+                <li><button onClick={()=>{showPage("resource")}} className="btnbg">Resources</button></li>
+                <li><button onClick={()=>{showPage("pricing")}} className="btnbg">Pricing</button></li>
             </ul>
         </nav>
         <div className="actions">

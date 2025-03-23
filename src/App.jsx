@@ -19,7 +19,7 @@ function App() {
     <>
     {/* <Link to="/">Home</Link> */}
      <Routes>
-      <Route path='/' element={<TopBar/>}/>
+      <Route path='/' element={<Landing/>}/>
       <Route path='/main' element={<MainCard/>}/>
       <Route path='/right' element={<RightHero/>}/>
       <Route path='/details' element={<TopCards/>}/>
