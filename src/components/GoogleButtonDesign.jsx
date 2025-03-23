@@ -1,9 +1,13 @@
 import { useEffect } from "react"
+import toast from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function GoogleButtonDesign(){
 
     const clientId = import.meta.env.VITE_CLIENT_ID;
-    console.log(123, clientId);
+    const dispatch = useDispatch()
+    const googleToken = useSelector((state)=>state.googleToken)
+    console.log(123, clientId, googleToken);
     useEffect(()=>{
         console.log("Inside Google!")
         window.google?.accounts.id.initialize({
@@ -17,9 +21,10 @@ export default function GoogleButtonDesign(){
     }, [])
 
     function handleCredentialResponse(response) {
-        console.log("Google Login Token:", response.credential);
+        dispatch({type: "SOME_VALUE", payload: response.credential})
       }
-
+      
+      //console.log(2222, googleToken.googleToken)
     return(
         <div> 
              <div id="google-signin-btn"></div>

@@ -1,6 +1,6 @@
 export const initialState = {
     somevalue: [],
-    somevalue2 : ""
+    googleToken : ""
 }
 
 export default function appReducer(state = initialState, action){
@@ -8,6 +8,8 @@ export default function appReducer(state = initialState, action){
           case "SOME_ARRAY": 
           return {...state, somevalue: [state.somevalue, ...action.payload]}
           case "SOME_VALUE": 
-          return {...state, somevalue2 : action.payload}
+          return {...state, googleToken : action.payload}
+          default:
+            return state;
       }
 }

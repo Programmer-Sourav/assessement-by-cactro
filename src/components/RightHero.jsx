@@ -42,7 +42,7 @@ export default function RightHero(){
                 {userData.map((userItem)=>(
                 <div className="message-content">
                 <img key={userItem.id} src={userItem.src} width={userItem.width} height={userItem.height} alt="user"/>
-                <h4 key={userItem.id}>{userItem.username}</h4>
+                <h4>{userItem.username}</h4>
                 <p>{userItem.currentStatus}</p>
                 </div>    
             ))}

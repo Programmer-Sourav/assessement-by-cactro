@@ -38,7 +38,7 @@ export default function MainCard(){
               <div className="hero-buttons">
                 <button className="try-free">TRY FOR FREE</button>
                 {/* <button className="google-signup">SIGN UP WITH GOOGLE</button> */}
-                <DummyGoogleButtonDesign/>
+                <GoogleButtonDesign/>
               </div>
             </div>
           

@@ -12,12 +12,14 @@ import Pricing from './pages/Pricing'
 import Resources from './pages/Resources'
 import Enterprises from './pages/Enterprises'
 import GoogleButtonDesign from './components/GoogleButtonDesign'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <div><Toaster/></div>
     {/* <Link to="/">Home</Link> */}
      <Routes>
       <Route path='/' element={<Landing/>}/>
