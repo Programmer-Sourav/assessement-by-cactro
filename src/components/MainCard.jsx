@@ -25,7 +25,7 @@ export default function MainCard(){
     
 
     function watchVideo(){
-         navigate("https://www.youtube.com/watch?v=q19RtuCHt1Q")
+        window.open("https://www.youtube.com/watch?v=q19RtuCHt1Q", "_blank");
     }
     
     return(

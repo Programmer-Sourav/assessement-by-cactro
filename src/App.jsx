@@ -11,6 +11,7 @@ import Products from './pages/Products'
 import Pricing from './pages/Pricing'
 import Resources from './pages/Resources'
 import Enterprises from './pages/Enterprises'
+import GoogleButtonDesign from './components/GoogleButtonDesign'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,7 +27,7 @@ function App() {
       <Route path='/landing' element={<Landing/>}/>
       <Route path='/modal' element={<Modal/>}/>
 
-
+      <Route path='/login' element={<GoogleButtonDesign/>}/>
       <Route path='/products' element={<Products/>}/>
       <Route path='/pricing' element={<Pricing/>}/>
       <Route path='/resource' element={<Resources/>}/>

@@ -2,11 +2,12 @@ import { useEffect } from "react"
 
 export default function GoogleButtonDesign(){
 
-    
+    const clientId = import.meta.env.VITE_CLIENT_ID;
+    console.log(123, clientId);
     useEffect(()=>{
         console.log("Inside Google!")
         window.google?.accounts.id.initialize({
-            client_id: "YOUR_GOOGLE_CLIENT_ID",
+            client_id: import.meta.env.VITE_CLIENT_ID,
             callback: handleCredentialResponse,
           });
         window.google?.accounts.id.renderButton(
@@ -14,6 +15,10 @@ export default function GoogleButtonDesign(){
             { theme: "outline", size: "large" }
           );
     }, [])
+
+    function handleCredentialResponse(response) {
+        console.log("Google Login Token:", response.credential);
+      }
 
     return(
         <div> 
