@@ -1,0 +1,6 @@
+.left-frame-container {
+    display: flex;
+    height: 50vh;
+    background: #3f0e40;
+    color: white;
+  }

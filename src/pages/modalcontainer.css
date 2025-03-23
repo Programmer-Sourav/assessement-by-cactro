@@ -1,0 +1,13 @@
+.modalcontainer{
+    width: 256px;
+    height: 256px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modalbutton{
+    background: #611f69;
+    color: white;
+}

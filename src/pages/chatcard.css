@@ -1,0 +1,149 @@
+/* Container for Sidebar + Chat Card */
+.chat-container {
+  display: flex;
+  height: 50vh;
+  background: #3f0e40;
+  color: white;
+}
+
+/* Left Sidebar */
+.sidebar {
+  width: 250px;
+  background: #3f0e40;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background: #611f69;
+}
+
+/* Active Channel */
+.sidebar ul li.active {
+  font-weight: bold;
+}
+
+/* Bottom User Section */
+.sidebar .user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .user-section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Right Chat Card */
+.chat-card {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+}
+
+/* Chat Header */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.chat-header h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Messages */
+.chat-messages {
+  margin-top: 15px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.message:last-child {
+  border-bottom: none;
+}
+
+.message img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+.useritem{
+  gap: 8px;
+}
+
+.message-content h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  display: inline;
+}
+
+.message-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Join Button */
+.join-button {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.join-button a {
+  text-decoration: none;
+  color: #007a5a;
+  font-weight: bold;
+}
+.user-avatar{
+  border-radius: 50%;
+}

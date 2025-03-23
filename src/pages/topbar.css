@@ -1,0 +1,63 @@
+/* Top Bar Styles */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-bar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #611f69;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-bar nav {
+    display: flex;
+    min-width: 512px;
+    justify-content: space-evenly;
+  }
+  
+  .top-bar nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-left: 1rem;
+  }
+  
+  .top-bar nav ul li {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: inline;
+    
+  }
+  .top-bar .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .top-bar .buttons button {
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .top-bar .buttons .signup {
+    background: #611f69;
+    color: white;
+  }
+  
+  .top-bar .buttons .login {
+    background: white;
+    border: 1px solid #611f69;
+    color: #611f69;
+  }
+  
