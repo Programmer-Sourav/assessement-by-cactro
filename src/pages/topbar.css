@@ -60,4 +60,20 @@
     border: 1px solid #611f69;
     color: #611f69;
   }
+  .btn-outline{
+        background: transparent;
+        border: 1px solid #611f69;
+        color: #611f69;
+  }
+  .btn-primary{
+    background: #611f69;
+    border: 1px solid #611f69;
+    color: #FFFFFF;
+  }
+  .actions{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px
+  }
+
   

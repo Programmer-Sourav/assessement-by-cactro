@@ -7,6 +7,10 @@ import MainCard from './components/MainCard'
 import RightHero from './components/RightHero'
 import Landing from './pages/Landing'
 import Modal from './components/Modal'
+import Products from './pages/Products'
+import Pricing from './pages/Pricing'
+import Resources from './pages/Resources'
+import Enterprises from './pages/Enterprises'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +25,12 @@ function App() {
       <Route path='/details' element={<TopCards/>}/>
       <Route path='/landing' element={<Landing/>}/>
       <Route path='/modal' element={<Modal/>}/>
+
+
+      <Route path='/products' element={<Products/>}/>
+      <Route path='/pricing' element={<Pricing/>}/>
+      <Route path='/resource' element={<Resources/>}/>
+      <Route path='/enterprise' element={<Enterprises/>}/>
      </Routes>
     </>
   )
