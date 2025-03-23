@@ -3,7 +3,7 @@ export default function Resources(){
 
     return(
         <div> 
-            <h1> Nothing To Show!</h1>
+            <h1> Resources Page! Nothing To Show!</h1>
         </div>
     )
 }
